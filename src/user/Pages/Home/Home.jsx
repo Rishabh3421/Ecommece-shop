@@ -7,7 +7,7 @@ import Product from '../../components/Products/Product'
 const Home = () => {
   return (
     <div>
-        <HomePage/>
+        {/* <HomePage/> */}
         <Product/>
         <Footer/>
     </div>
