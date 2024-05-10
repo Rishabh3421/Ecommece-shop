@@ -2,9 +2,9 @@ import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
-import ProductCard from '../../components/Products/ProductCard'
-import Mens_Kurtas from '../../components/ProductData/Mens_Kurtas.json'
-import {filters,singleFilter} from '../../components/Filter/FilterData'
+import ProductCard from './ProductCard.jsx'
+import Mens_Kurtas from '../ProductData/Mens_Kurtas.json'
+import {filters} from '../Filter/FilterData.js'
 
 const sortOptions = [
   { name: 'Price: Low to High', href: '#', current: false },

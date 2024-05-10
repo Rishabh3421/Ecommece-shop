@@ -1,8 +1,0 @@
-.productCard {
-    transition: ease-in-out 2s;
-    overflow: hidden;
-}
-
-.productCard:hover img {
-    transform: scale(1.1);
-}

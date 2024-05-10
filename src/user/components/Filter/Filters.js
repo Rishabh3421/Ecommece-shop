@@ -89,32 +89,59 @@ export const filters = [
                 checked:false
             },
         ]
-    }
+    },
+    
+
 ];
 
-export const singleFilter=[
+export const singleFilter = [
     {
-        id:"price",
-        name:"Price",
-        options:[
-            {value: "149-399", lable:"₹149-₹399"},
-            {value: "400-699", lable:"₹400-₹699"},
-            {value: "700-999", lable:"₹700-₹999"},
-            {value: "1000+", lable:"₹1000+"},
+        id: "price",
+        name: "Price",
+        type: "radio",
+        options: [
+            { value: "149-399", label: "₹149-₹399" },
+            { value: "400-699", label: "₹400-₹699" },
+            { value: "700-999", label: "₹700-₹999" },
+            { value: "1000+", label: "₹1000+" },
         ]
     },
     {
-        id:"discount",
-        name:"Discount",
-        options:[
-            {value: "10%", lable:"10%"},
-            {value: "20%", lable:"20%"},
-            {value: "30%", lable:"30%"},
-            {value: "40%", lable:"40%"},
-            {value: "50%", lable:"50%"},
-            {value: "60%", lable:"60%"},
-            {value: "70%", lable:"70%"},
-            {value: "80%", lable:"80%"},
+        id: "discount",
+        name: "Discount Range",
+        type: "radio",
+        options: [
+            { value: "10%", label: "10%" },
+            { value: "20%", label: "20%" },
+            { value: "30%", label: "30%" },
+            { value: "40%", label: "40%" },
+            { value: "50%", label: "50%" },
+            { value: "60%", label: "60%" },
+            { value: "70%", label: "70%" },
+            { value: "80%", label: "80%" },
+        ]
+    },
+    {
+        id: "availability",
+        name: "Availability",
+        type: "radio",
+        options: [
+            {
+                label: "In Stock",
+                value: "in_stock",
+                checked: false
+            },
+            {
+                label: "Out of Stock",
+                value: "out_of_stock",
+                checked: false
+            },
+            {
+                label: "Pre-order",
+                value: "pre_order",
+                checked: false
+            }
         ]
     }
-]
+];
+
