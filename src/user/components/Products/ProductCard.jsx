@@ -1,23 +1,25 @@
-import React from 'react'
-import './ProductCard.css'
+import React from 'react';
+import './ProductCard.css';
 
-const ProductCard = ({products}) => {
+const ProductCard = ({product}) => {
   return (
-   <div className="productCard border-2 w-[15rem] m-3 transition-all overflow-hidden cursor-pointer">
-    <div className="h-[20rem] imageContainer overflow-hidden">
-      <img className='h-full w-full object-cover object-left-top' src={products.imageUrl} alt="" />
-    </div>
-    <div className="ProductDetails  bg-white p-3">
-      <p className='font-semibold'>{products.title}</p>
-      <p className='text-gray-500'>{products.brand}</p>
-      <div className="price flex gap-3">
-        <p>₹{products.discountedPrice}</p>
-        <p className='line-through text-gray-500'>₹{products.price}</p>
-        <p className='text-green-500 font-semibold'>{products.discountPersent}%Off</p>
+    <div className="productCard border-2 p-3 w-[15rem] m-3 transition-all cursor-pointer">
+      <div className="h-[20rem]">
+        <img className="h-full w-full object-cover object-top" src={product.imageUrl} alt="" />
+      </div>
+      <div className="textDetails bg-white p-3">
+        <div className="">
+        <h2 className='font-semibold'>{product.title}</h2>
+        <h3 className='font-md opacity-80'>{product.brand}.</h3>
+        </div>
+        <div className="flex gap-3 mt-1">
+          <p className='font-semibold'>₹{product.discountedPrice}</p>
+          <p className='line-through opacity-70'>₹{product.price}</p>
+          <p className='text-green-700 font-semibold'>{product.discountPersent}%Off</p>
+        </div>
       </div>
     </div>
-   </div>
   )
 }
 
-export default ProductCard
+export default ProductCard;
